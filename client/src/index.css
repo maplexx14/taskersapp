@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply h-full antialiased;
+  }
+
+  body {
+    @apply font-sans bg-background text-foreground min-h-full overflow-x-hidden;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  input, textarea {
+    @apply appearance-none;
+    -webkit-appearance: none;
+  }
+}
