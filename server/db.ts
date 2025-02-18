@@ -6,5 +6,5 @@ import * as schema from "@shared/schema";
 neonConfig.webSocketConstructor = ws;
 
 
-export const pool = new Pool({ connectionString: "postgresql://neondb_owner:npg_7xupFKyQe6is@ep-dry-recipe-a4g5w0uz.us-east-1.aws.neon.tech/neondb?sslmode=require" });
+export const pool = new Pool({ connectionString: "db_url" });
 export const db = drizzle({ client: pool, schema });
