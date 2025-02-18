@@ -50,8 +50,8 @@ export default function HomePage() {
       <header className="border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div  className=" flex items-center space-x-4">
-            <span  className="flex items-center space-x-4 cursor-pointer">
-              <img href="https://ya.ru" src={Icon} className="h-10 w-10 rounded-[10px]"/>
+            <span href="https://ya.ru" className="flex items-center space-x-4 cursor-pointer">
+              <img src={Icon} className="h-10 w-10"/>
               <h1 className="text-2xl font-bold">taskers.</h1>
             </span>
           </div>

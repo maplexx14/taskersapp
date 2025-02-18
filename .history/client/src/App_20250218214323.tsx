@@ -28,25 +28,25 @@ function MobileNav() {
     <nav className="fixed bottom-0 left-0 right-0 bg-background border-t flex justify-around items-center h-16 px-4">
       
       <Link href="/">
-        <a className={cn("flex flex-col items-center", location === "/" && "text-gray-500")}>
+        <a className={cn("flex flex-col items-center", location === "/" && "text-primary")}>
           <Home size={24} />
           <span className="text-xs mt-1">{t('tasks')}</span>
         </a>
       </Link>
       <Link href="/completed">
-        <a className={cn("flex flex-col items-center", location === "/completed" && "text-gray-500")}>
+        <a className={cn("flex flex-col items-center", location === "/completed" && "text-primary")}>
           <CheckCircle size={24} />
           <span className="text-xs mt-1">{t('completedTasksHome')}</span>
         </a>
       </Link>
       <Link href="/profile">
-        <a className={cn("flex flex-col items-center", location === "/profile" && "text-gray-500")}>
+        <a className={cn("flex flex-col items-center", location === "/profile" && "transition delay-150 duration-300 ease-in-out hover:-translate-y-1 bg-gray-500")}>
           <User size={24} />
           <span className="text-xs mt-1">{t('profile')}</span>
         </a>
       </Link>
       <Link href="/settings">
-        <a className={cn("flex flex-col items-center", location === "/settings" && "text-gray-500")}>
+        <a className={cn("flex flex-col items-center", location === "/settings" && "text-primary")}>
           <Settings size={24} />
           <span className="text-xs mt-1">{t('settings')}</span>
         </a>

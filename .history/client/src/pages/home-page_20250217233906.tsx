@@ -7,7 +7,7 @@ import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import TaskForm from "@/components/task-form";
 import TaskCard from "@/components/task-card";
 import { Plus } from "lucide-react";
-import Icon from "@/imgs/icon.png"
+import Icon from "client\\public\\img\\icon.png"
 import {
   Select,
   SelectContent,
@@ -49,11 +49,9 @@ export default function HomePage() {
     <div className="min-h-screen bg-background">
       <header className="border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div  className=" flex items-center space-x-4">
-            <span  className="flex items-center space-x-4 cursor-pointer">
-              <img href="https://ya.ru" src={Icon} className="h-10 w-10 rounded-[10px]"/>
-              <h1 className="text-2xl font-bold">taskers.</h1>
-            </span>
+          <div className="flex items-center space-x-4">
+            <img src={Icon}/>
+            <h1 className="text-2xl font-bold">taskers.</h1>
           </div>
           <div className="flex items-center space-x-4">
             <ThemeSwitch />

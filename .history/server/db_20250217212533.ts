@@ -5,6 +5,11 @@ import * as schema from "@shared/schema";
 
 neonConfig.webSocketConstructor = ws;
 
+if (!process.env.DATABASE_URL) {
+  throw new Error(
+    "бд вьеби",
+  );
+}
 
-export const pool = new Pool({ connectionString: "postgresql://neondb_owner:npg_7xupFKyQe6is@ep-dry-recipe-a4g5w0uz.us-east-1.aws.neon.tech/neondb?sslmode=require" });
+export const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 export const db = drizzle({ client: pool, schema });

@@ -25,7 +25,7 @@ function MobileNav() {
   if (!isMobile || location === "/auth") return null;
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-background border-t flex justify-around items-center h-16 px-4">
+    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around items-center h-16 px-4">
       
       <Link href="/">
         <a className={cn("flex flex-col items-center", location === "/" && "text-gray-500")}>
